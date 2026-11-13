@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News Manager | ELITE NEWS</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="logo">ELITE <span>NEWS</span></div>
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="news.html">News</a>
+    <a href="admin.html">Admin</a>
+  </nav>
+</header>
+
+<main class="admin-container">
+
+  <h1>ELITE NEWS MANAGEMENT</h1>
+  <p>Manage your news articles.</p>
+
+  <section class="admin-form">
+    <h2>Add New Article</h2>
+
+    <form id="adminForm">
+
+      <label for="newsTitle">Article Title</label>
+      <input id="newsTitle" type="text"
+        placeholder="Enter article title" required>
+
+      <label for="newsCategory">Category</label>
+      <select id="newsCategory" required>
+        <option value="">Select Category</option>
+        <option>Technology</option>
+        <option>Education</option>
+        <option>Business</option>
+        <option>Entertainment</option>
+        <option>Sports</option>
+        <option>Science</option>
+        <option>Innovation</option>
+      </select>
+
+      <label for="newsAuthor">Author</label>
+      <input id="newsAuthor" type="text"
+        placeholder="Enter author name" required>
+
+      <label for="newsDescription">Article Content</label>
+      <textarea id="newsDescription" rows="7"
+        placeholder="Write your article..." required></textarea>
+
+      <button type="submit">Publish Article</button>
+
+      <p id="adminMessage" aria-live="polite"></p>
+
+    </form>
+  </section>
+
+  <section class="admin-list">
+    <h2>Published Articles</h2>
+    <div id="managedArticles"></div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>© 2026 ELITE NEWS. All Rights Reserved.</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
